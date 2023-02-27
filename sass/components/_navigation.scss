@@ -1,0 +1,33 @@
+.main-nav {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+
+    min-height: 83px;
+    margin-left: 266px;
+  }
+
+  &__item {
+    margin-right: 68px;
+    text-align: center;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      font-size: $fs-5;     
+  
+      &:hover,
+      &:focus {
+        text-decoration: underline solid $clr-3;
+        text-underline-position: under;        
+      }
+
+      &:active {       
+        text-decoration-color: $clr-4;
+      }
+    }
+  }
+}

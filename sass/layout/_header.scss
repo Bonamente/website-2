@@ -1,0 +1,14 @@
+@import '../components/navigation';
+@import '../components/customer-navigation';
+
+.header {
+
+  &__container {
+    display: flex;   
+    align-items: center;
+
+    min-height: 83px;
+
+    background-color: $clr-1;   
+  }
+}
