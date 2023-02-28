@@ -1,0 +1,14 @@
+.gallery {
+  &__list {    
+    display: grid; 
+    grid-template-columns: 242px 377px; 
+    grid-template-rows: 228px 228px; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "small big"
+      "small big";    
+
+    .big { grid-area: big; }
+    .small { grid-area: small; }    
+  }
+}

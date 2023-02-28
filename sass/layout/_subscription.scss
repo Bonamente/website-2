@@ -1,0 +1,39 @@
+@import '../components/socials';
+@import '../components/gallery';
+
+.subscription {
+  min-height: 460px;
+  margin-bottom: 90px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 540px;
+    padding-top: 140px;
+  }
+
+  &__title {
+    margin-bottom: 26px;
+
+    font-family: $ff-alt-alpha;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fs-2;
+    line-height: 43px;
+  }
+
+  &__text {
+    margin-bottom: 112px;
+
+    font-size: $fs-4;
+    line-height: 27px;
+
+    color: $clr-text-1;
+  }
+}
