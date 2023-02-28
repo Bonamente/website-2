@@ -1,0 +1,47 @@
+@import '../components/slider';
+
+.advantages {
+  margin-bottom: 81px;
+
+  &__container {
+    min-height: 519px;
+    padding: 0;
+    padding-top: 52px;
+    padding-left: 177px;
+    padding-right: 222px;  
+
+    background-image: url('/assets/img/advantages-bg.png'), linear-gradient(90deg, $clr-2 0 34.3%, $clr-1 34.3%);  
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  &__inner-wrapper {
+    display: flex;
+  }
+
+  &__description {
+    max-width: 376px;
+    margin-left: 70px;
+    padding-top: 88px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    font-family: $ff-alt-alpha;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fs-2;
+    line-height: 43px;
+  }
+  
+  &__text {
+    margin-bottom: 40px;
+
+    font-size: $fs-4;
+    line-height: 24px;
+    color: $clr-text-1;
+  }  
+}
+
+

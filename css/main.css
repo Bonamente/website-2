@@ -477,7 +477,6 @@ main {
   background-color: #d4b098;
 }
 .button--catalog-light:hover, .button--catalog-light:focus {
-  color: #1b1a17;
   background-color: #444240;
 }
 
@@ -737,7 +736,7 @@ main {
 
 .popular {
   padding-top: 73px;
-  padding-bottom: 86px;
+  margin-bottom: 79px;
 }
 .popular__container {
   position: relative;
@@ -784,4 +783,78 @@ main {
 }
 .popular__item {
   display: flex;
+}
+
+.slider__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75px;
+  margin-top: 20px;
+  margin-right: 75px;
+  margin-left: auto;
+}
+.slider__toggle-arrow {
+  width: 16px;
+  height: 16px;
+}
+.slider__toggle-arrow:hover, .slider__toggle-arrow:focus {
+  transform: scale(2);
+}
+.slider__toggle-arrow:active {
+  transform: scale(1.5);
+}
+.slider__toggle-arrow--prev {
+  background-image: url("/assets/img/arrow-left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slider__counter {
+  font-family: "Prata", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+.slider__toggle-arrow--next {
+  background-image: url("/assets/img/arrow-right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages {
+  margin-bottom: 81px;
+}
+.advantages__container {
+  min-height: 519px;
+  padding: 0;
+  padding-top: 52px;
+  padding-left: 177px;
+  padding-right: 222px;
+  background-image: url("/assets/img/advantages-bg.png"), linear-gradient(90deg, #f7f5ef 0 34.3%, #fdfdfb 34.3%);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.advantages__inner-wrapper {
+  display: flex;
+}
+.advantages__description {
+  max-width: 376px;
+  margin-left: 70px;
+  padding-top: 88px;
+}
+.advantages__title {
+  margin-bottom: 25px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+}
+.advantages__text {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #444240;
 }/*# sourceMappingURL=main.css.map */
