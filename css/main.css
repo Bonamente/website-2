@@ -893,7 +893,7 @@ main {
 
 .subscription {
   min-height: 460px;
-  margin-bottom: 90px;
+  margin-bottom: 84px;
 }
 .subscription__container {
   display: flex;
@@ -918,4 +918,64 @@ main {
   font-size: 16px;
   line-height: 27px;
   color: #444240;
+}
+
+.logo__text {
+  margin-left: 8px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer__container {
+  padding: 79px 185px 54px;
+  color: #ffffff;
+  background-color: #444240;
+}
+.footer__info-list {
+  display: flex;
+}
+.footer__info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__info-item--contacts {
+  margin-top: -6px;
+}
+.footer__info-item--about {
+  margin-left: 150px;
+}
+.footer__info-item--customers {
+  margin-left: 140px;
+}
+.footer__info-item--payment {
+  margin-left: 155px;
+}
+.footer__logo {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+.footer__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.footer__text, .footer__link {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: all 0.2s ease-in;
+}
+.footer__link:hover, .footer__link:focus {
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
