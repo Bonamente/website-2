@@ -1,0 +1,124 @@
+.promo {
+  position: relative;
+  min-width: 768px;  
+
+  &__container {
+    position: relative;
+    padding: 0;
+
+    background-color: $clr-1;
+  }
+
+  &__description {
+    position: absolute;
+    top: 233px;
+    left: 186px;
+    z-index: 10;
+
+    min-width: 345px;
+  }
+
+  &__title {
+    position: relative;
+
+    margin-bottom: 4px;
+
+    font-family: $ff-alt-alpha;    
+    font-size: $fs-1;
+    font-weight: 400;
+    line-height: 60px;
+
+    &::before {
+      position: absolute;
+      top: 35px;      
+      left: -65px;
+      
+      content: '';
+      
+      display: block;      
+      width: 50px;
+      height: 1px;
+
+      background-color: $clr-6;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 28px;
+
+    font-family: $ff-alt-alpha;
+    font-size: $fs-3;
+    font-weight: 400;
+    line-height: 40px;    
+  }
+
+  &__text {
+    margin-bottom: 58px;
+
+    color: $clr-text-3;
+    font-weight: 300;
+    font-size: $fs-5;
+    line-height: 21px;
+  }
+
+  &__image-wrapper {
+    position: relative;
+  }
+
+  &__price {
+    position: absolute;
+    top: 135px;
+    left: 42.8%;
+
+    font-family: $ff-alt-beta;    
+    font-weight: 400;
+    font-size: $fs-4;
+    line-height: 22px;
+
+    &::after {
+      position: absolute;
+      top: 9px;      
+      right: -68px;
+      
+      content: '';
+      
+      display: block;      
+      width: 50px;
+      height: 1px;
+
+      background-color: $clr-6;
+    }
+  }
+
+  &__specs {
+    position: absolute;
+    bottom: 113px;
+    right: 8.4%;
+
+    font-family: $ff-alt-beta;    
+    font-weight: 400;
+    font-size: $fs-4;
+    line-height: 22px;
+
+    &::before {
+      position: absolute;
+      top: 9px;      
+      left: -65px;
+      
+      content: '';
+      
+      display: block;      
+      width: 50px;
+      height: 1px;
+
+      background-color: $clr-6;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
+
+
+

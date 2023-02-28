@@ -342,21 +342,21 @@ template {
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../../assets/fonts/PlayfairDisplay-Regular.ttf") format("ttf");
+  src: url("../../assets/fonts/PlayfairDisplay-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../../assets/fonts/PlayfairDisplay-Bold.ttf") format("ttf");
+  src: url("../../assets/fonts/PlayfairDisplay-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Prata";
-  src: url("../../assets/fonts/Prata-Regular.ttf") format("ttf");
+  src: url("../../assets/fonts/Prata-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -453,6 +453,33 @@ main {
   cursor: pointer;
   transition: all 0.2s ease-in;
 }
+.button--catalog {
+  width: 205px;
+  height: 64px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.button--catalog:active {
+  transform: scale(0.98);
+}
+.button--catalog-dark {
+  background-color: #444240;
+}
+.button--catalog-dark:hover, .button--catalog-dark:focus {
+  color: #1b1a17;
+  background-color: #d4b098;
+}
+.button--catalog-light {
+  background-color: #d4b098;
+}
+.button--catalog-light:hover, .button--catalog-light:focus {
+  color: #1b1a17;
+  background-color: #444240;
+}
 
 .main-nav__list {
   display: flex;
@@ -485,8 +512,7 @@ main {
   align-items: center;
   justify-content: space-between;
   min-width: 100px;
-  min-height: 83px;
-  padding-top: 13px;
+  padding-top: 8px;
   margin-left: auto;
 }
 .customer-navigation__search {
@@ -520,6 +546,7 @@ main {
   position: absolute;
   top: -5px;
   right: -7px;
+  content: "1";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -528,7 +555,6 @@ main {
   font-size: 8px;
   border-radius: 50%;
   background-color: #e6c8b4;
-  content: "1";
 }
 .customer-navigation__cart {
   display: block;
@@ -548,6 +574,99 @@ main {
 .header__container {
   display: flex;
   align-items: center;
-  min-height: 83px;
+  min-height: 88px;
   background-color: #fdfdfb;
+}
+
+.promo {
+  position: relative;
+  min-width: 768px;
+}
+.promo__container {
+  position: relative;
+  padding: 0;
+  background-color: #fdfdfb;
+}
+.promo__description {
+  position: absolute;
+  top: 233px;
+  left: 186px;
+  z-index: 10;
+  min-width: 345px;
+}
+.promo__title {
+  position: relative;
+  margin-bottom: 4px;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+}
+.promo__title::before {
+  position: absolute;
+  top: 35px;
+  left: -65px;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #8b8371;
+}
+.promo__subtitle {
+  margin-bottom: 28px;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.promo__text {
+  margin-bottom: 58px;
+  color: rgba(27, 26, 23, 0.82);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+}
+.promo__image-wrapper {
+  position: relative;
+}
+.promo__price {
+  position: absolute;
+  top: 135px;
+  left: 42.8%;
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.promo__price::after {
+  position: absolute;
+  top: 9px;
+  right: -68px;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #8b8371;
+}
+.promo__specs {
+  position: absolute;
+  bottom: 113px;
+  right: 8.4%;
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.promo__specs::before {
+  position: absolute;
+  top: 9px;
+  left: -65px;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #8b8371;
+}
+.promo__image {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

@@ -3,9 +3,8 @@
   align-items: center;
   justify-content: space-between;
 
-  min-width: 100px;
-  min-height: 83px;
-  padding-top: 13px;
+  min-width: 100px;  
+  padding-top: 8px;
   margin-left: auto;
 
   &__search {
@@ -50,6 +49,8 @@
       position: absolute;
       top: -5px;      
       right: -7px;
+      
+      content: '1';
 
       display: flex;
       align-items: center;
@@ -61,8 +62,6 @@
       font-size: $fs-7;
       border-radius: 50%;
       background-color: $clr-3;
-
-      content: '1';
     }
   }
 

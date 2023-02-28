@@ -12,5 +12,41 @@
   outline: none;
   cursor: pointer;
 
-  transition: all 0.2s ease-in; 
+  transition: all 0.2s ease-in;
+  
+  &--catalog {
+    width: 205px;
+    height: 64px;
+
+    color: $clr-white;    
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    &:active{
+      transform: scale(0.98);
+    }
+
+    &-dark {      
+      background-color: $clr-5;
+
+      &:hover,
+      &:focus {
+        color: $clr-text-base;
+        background-color: $clr-4;
+      }      
+    }
+
+    &-light {
+      background-color: $clr-4;
+
+      &:hover,
+      &:focus {
+        color: $clr-text-base;
+        background-color: $clr-5;
+      }  
+    }
+  }
 }
