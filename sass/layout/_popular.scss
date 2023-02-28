@@ -1,0 +1,68 @@
+@import '../components/item-card';
+
+.popular {
+  padding-top: 73px;
+  padding-bottom: 86px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 43px;
+
+    font-family: $ff-alt-alpha;
+    font-style: normal;
+    font-size: $fs-2;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: center;
+  }
+
+  &__link {
+    position: absolute;
+    top: 36px;
+    right: 98px;
+
+    font-weight: 500;
+    font-size: $fs-4;
+    line-height: 19px;
+    color: $clr-text-1;
+
+    transition: all 0.2s ease-in;
+
+    &:hover,
+    &:focus {
+      color: $clr-3;
+    }
+
+    &:active {
+      color: $clr-4;
+    }
+    
+    &::after {
+      position: absolute;
+      top: 26px;
+      right: 0;      
+      left: 0;
+      
+      content: '';
+      
+      display: block;    
+      height: 1px;
+
+      background-color: $clr-7;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    display: flex;    
+  }
+}
+

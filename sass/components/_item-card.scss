@@ -1,0 +1,78 @@
+.item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+ 
+  min-width: 370px;
+  padding: 40px 0; 
+
+  color: $clr-text-3;
+  background-color: $clr-1;
+
+  &__top {
+    width: 100%;
+    padding-left: 40px;    
+  }
+
+  &__title {
+    margin-bottom: 2px; 
+
+    font-family: $ff-alt-alpha;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;   
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase; 
+  }
+
+  &__price {
+    font-family: $ff-alt-beta;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fs-6;
+    line-height: 16px;   
+  }
+
+  &__bottom {
+    width: 100%;
+    padding-left: 90px;
+    margin-top: auto;    
+  }
+
+  &__link {
+    position: relative;
+
+    font-family: $ff-alt-alpha;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fs-4;
+    line-height: 21px;
+    color: $clr-text-base;
+
+    &::before {
+      position: absolute;
+      top: 10px;      
+      left: -50px;
+      
+      content: '';
+      
+      display: block;      
+      width: 30px;
+      height: 1px;
+
+      background-color: $clr-6;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline solid $clr-3;
+      text-underline-position: under;        
+    }
+
+    &:active {       
+      text-decoration-color: $clr-4;
+    }
+  }
+}

@@ -669,4 +669,119 @@ main {
 }
 .promo__image {
   width: 100%;
+}
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  min-width: 370px;
+  padding: 40px 0;
+  color: rgba(27, 26, 23, 0.82);
+  background-color: #fdfdfb;
+}
+.item-card__top {
+  width: 100%;
+  padding-left: 40px;
+}
+.item-card__title {
+  margin-bottom: 2px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.item-card__price {
+  font-family: "Prata", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.item-card__bottom {
+  width: 100%;
+  padding-left: 90px;
+  margin-top: auto;
+}
+.item-card__link {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1b1a17;
+}
+.item-card__link::before {
+  position: absolute;
+  top: 10px;
+  left: -50px;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: #8b8371;
+}
+.item-card__link:hover, .item-card__link:focus {
+  -webkit-text-decoration: underline solid #e6c8b4;
+          text-decoration: underline solid #e6c8b4;
+  text-underline-position: under;
+}
+.item-card__link:active {
+  text-decoration-color: #d4b098;
+}
+
+.popular {
+  padding-top: 73px;
+  padding-bottom: 86px;
+}
+.popular__container {
+  position: relative;
+}
+.popular__title {
+  margin-bottom: 43px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  text-align: center;
+}
+.popular__link {
+  position: absolute;
+  top: 36px;
+  right: 98px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444240;
+  transition: all 0.2s ease-in;
+}
+.popular__link:hover, .popular__link:focus {
+  color: #e6c8b4;
+}
+.popular__link:active {
+  color: #d4b098;
+}
+.popular__link::after {
+  position: absolute;
+  top: 26px;
+  right: 0;
+  left: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #c4c0b6;
+}
+.popular__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.popular__item {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
