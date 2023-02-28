@@ -517,7 +517,7 @@ main {
 .customer-navigation__search {
   width: 16px;
   height: 16px;
-  background-image: url("../../assets/img/search-icon.svg");
+  background-image: url("../assets/img/search-icon.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -531,7 +531,7 @@ main {
   display: block;
   width: 19px;
   height: 16px;
-  background-image: url("../../assets/img/heart-icon.svg");
+  background-image: url("../assets/img/heart-icon.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -559,7 +559,7 @@ main {
   display: block;
   width: 18px;
   height: 16px;
-  background-image: url("../../assets/img/cart-icon.svg");
+  background-image: url("../assets/img/cart-icon.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -805,7 +805,7 @@ main {
   transform: scale(1.5);
 }
 .slider__toggle-arrow--prev {
-  background-image: url("/assets/img/arrow-left.svg");
+  background-image: url("../assets/img/arrow-left.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -818,7 +818,7 @@ main {
   color: rgba(27, 26, 23, 0.82);
 }
 .slider__toggle-arrow--next {
-  background-image: url("/assets/img/arrow-right.svg");
+  background-image: url("../assets/img/arrow-right.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -832,7 +832,7 @@ main {
   padding-top: 52px;
   padding-left: 177px;
   padding-right: 222px;
-  background-image: url("/assets/img/advantages-bg.png"), linear-gradient(90deg, #f7f5ef 0 34.3%, #fdfdfb 34.3%);
+  background-image: url("../assets/img/advantages-bg.png"), linear-gradient(90deg, #f7f5ef 0 34.3%, #fdfdfb 34.3%);
   background-repeat: no-repeat;
   background-position: right;
 }
